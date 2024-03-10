@@ -1,0 +1,177 @@
+/* Header styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+} */
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: cover;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+} */
+/* li{
+    font-size: 20px;
+} */
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    padding: 20px;
+}
+
+/* Upload section styles */
+.upload-section {
+    flex: 1;
+}
+
+.upload-box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.upload-box:hover {
+    border-color: #333;
+}
+
+.upload-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#video-upload {
+    display: none;
+}
+
+/* Analysis options styles */
+.analysis-options {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.option-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.option-box:hover {
+    background-color: #e0e0e0;
+}
+
+/* Output video styles */
+.output-video {
+    flex: 1;
+    padding: 0 20px;
+}
+
+#output-video {
+    width: 100%;
+}
+
+/* Download button styles */
+.download-button {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Hide default file input button */
+.video-upload-input {
+    display: none;
+}
+
+    /* Custom styling for the footer */
+    footer {
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+
+    .bottom-footer {
+        padding: 20px 0; /* Add some padding to the bottom footer for spacing */
+    }
+
+    .footer-title {
+        font-size: 16px; /* Adjust the font size of footer titles */
+    }
+    .footer-social-links i {
+        font-size: 16px; /* Adjust the size as needed */
+    }
+    
+
+    .footer-links li {
+        font-size: 14px; /* Adjust the font size of footer links */
+        list-style-type: none;/* Remove default list styles */ 
+        margin-bottom: 5px; /* Add margin between list items for spacing */
+    }
+
+    .footer-links a {
+        color: #fff9f9; /* Change the color of footer links */
+        text-decoration: none; /* Remove underlines from links */
+    }
+
+    .footer-links a:hover {
+        color: #fff0f0; /* Change the color of links on hover */
+    }
+
+    .footer-social-links li {
+        font-size: 18px; /* Adjust the font size of social media icons */
+        display: inline-block; /* Display social media icons inline */
+        margin-right: 10px; /* Add margin between social media icons for spacing */
+    }
+
+    .footer-social-links a {
+        color: #e2d2d2; /* Change the color of social media icons */
+        text-decoration: none; /* Remove underlines from links */
+    }
+
+    .footer-social-links a:hover {
+        color: #fff0f0; /* Change the color of social media icons on hover */
+    }
+
+
