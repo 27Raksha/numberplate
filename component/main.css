@@ -13,8 +13,13 @@ main {
     flex: 1;
 }
 #usernamePlaceholder {
+    align-items: center;
     font-size: 16px; 
-    margin-right: 70px;
+    /* margin-right: 70px; */
+    margin: auto;
+}
+.text-center {
+    text-align: center;
 }
 
 
@@ -45,6 +50,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 1%;
+    background-color: #8beded45 !important;
 }
 
 .upload-box:hover {
@@ -54,6 +61,7 @@ main {
 .upload-label {
     display: block;
     margin-bottom: 10px;
+    color: aquamarine !important;
 }
 
 #video-upload {
@@ -64,30 +72,23 @@ main {
     padding: 20px;
     flex:0.3;
 }
-.btn {
-    background: #4e4f4f;
-    background-image: -webkit-linear-gradient(top, #4e4f4f, #080808);
-    background-image: -moz-linear-gradient(top, #4e4f4f, #080808);
-    background-image: -ms-linear-gradient(top, #4e4f4f, #080808);
-    background-image: -o-linear-gradient(top, #4e4f4f, #080808);
-    background-image: linear-gradient(to bottom, #4e4f4f, #080808);
-    -webkit-border-radius: 9;
-    -moz-border-radius: 9;
-    border-radius: 9px;
-    font-family: Arial;
-    color: #fff2ff;
-    font-size: 20px;
-    padding: 12px 39px 12px 40px;
-    text-decoration: none;
+.btn{
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
   }
-  
+
   .btn:hover {
-    background: #838587;
-    background-image: -webkit-linear-gradient(top, #838587, #3d3d3d);
-    background-image: -moz-linear-gradient(top, #838587, #3d3d3d);
-    background-image: -ms-linear-gradient(top, #838587, #3d3d3d);
-    background-image: -o-linear-gradient(top, #838587, #3d3d3d);
-    background-image: linear-gradient(to bottom, #838587, #3d3d3d);
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
     text-decoration: none;
   }
 
@@ -116,7 +117,7 @@ main {
 }
 
 #output-video {
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
@@ -139,52 +140,48 @@ footer {
 .video-upload-input {
     display: none;
 } 
-
-    /* Custom styling for the footer */
     footer {
-        font-size: 10px; /* Adjust the font size as needed */
+        font-size: 10px;
     }
 
     .bottom-footer {
-        padding: 10px 0; /* Add some padding to the bottom footer for spacing */
+        padding: 10px 0;
     }
 
     .footer-title {
-        font-size: 15px; /* Adjust the font size of footer titles */
+        font-size: 15px; 
     }
     .footer-social-links i {
-        font-size: 10px; /* Adjust the size as needed */
+        font-size: 10px; 
+        
     }
     
 
     .footer-links li {
-        font-size: 10px; /* Adjust the font size of footer links */
-        list-style-type: none;/* Remove default list styles */ 
-        margin-bottom: 5px; /* Add margin between list items for spacing */
+        font-size: 10px; 
+        list-style-type: none;
+        margin-bottom: 5px;
+        /* text-align: left; */
     }
 
     .footer-links a {
-        color: #fff9f9; /* Change the color of footer links */
-        text-decoration: none; /* Remove underlines from links */
+        color: #fff9f9;
+        text-decoration: none; 
     }
 
     .footer-links a:hover {
-        color: #fff0f0; /* Change the color of links on hover */
+        color: #fff0f0;
     }
 
     .footer-social-links li {
-        font-size: 18px; /* Adjust the font size of social media icons */
-        display: inline-block; /* Display social media icons inline */
-        margin-right: 10px; /* Add margin between social media icons for spacing */
+        font-size: 18px; 
+        display: inline-block; 
+        margin-right: 10px;
     }
 
     .footer-social-links a {
-        color: #e2d2d2; /* Change the color of social media icons */
-        text-decoration: none; /* Remove underlines from links */
-    }
+        color: #e2d2d2; 
+        text-decoration: none;}
 
-    .footer-social-links a:hover {
-        color: #fff0f0; /* Change the color of social media icons on hover */
-    }
-
-
+    .footer-social-links a:hover { 
+        color: #fff0f0;}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Analysis Page</title>
+    <title>PlateVisionX</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     
@@ -16,22 +16,27 @@
     <header id="header" class="header-section">
         <nav id="nav-bar" class="navbar navbar-expand-sm navbar-dark  bg-dark">
             <div class="container">
-                <a href="#" class="navbar-brand">
+                <a href="#" class="navbar-brand ">
                     <img src="../logo/logo.png" alt="#logoImg" height="50" width="80" >
-                    <h3 id="usernamePlaceholder" class="d-inline align-middle"> Scoops</h3>
+                    <!-- <h3 id="usernamePlaceholder" class="d-inline align-middle text-center"></h3> -->
                 </a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link">Connect</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h3 id="usernamePlaceholder" class="d-inline align-middle text-center"></h3>
+                            </a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-white" href="login.html">Logout</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="#home" class="nav-link">Connect</a>
                         </li>
                         <li class="nav-item">
                             <a href="login.html" class="nav-link">Logout</a>
-                        </li>
+                        </li> -->
                 
                     </ul>
                 </div>
@@ -42,11 +47,12 @@
     <div class="main-content">
         <div class="upload-section">
             <div class="upload-box">
-                <label for="video-upload" class="upload-label"> <i class="fas fa-download fa-2x"></i></label>
+                <label for="video-upload" class="upload-label"> <i class="fas fa-upload fa-4x text-dark"></i></label>
                 <input type="file" id="video-upload" class="video-upload-input">
             </div>
-            <button id="upload-button" class ="btn btn-sm">Upload</button>
+            <button id="upload-button" class="btn btn-sm btn-primary">Upload</button>
         </div>
+        
         <div class="buttons-section">
             <div class="analysis-options">
                 <div class="option-box btn" id="detect-helmet">Detect Helmet and Numberplate</div>
@@ -65,30 +71,30 @@
         <div class="bottom-footer ">
             <div class="container" >
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-6 d-flex justify-content-start">
                         <div class="footer">
-                            <h3 class="footer-title">Contact Us</h3>
-                            <ul class="footer-links">
-                                <li><i class="fa fa-map-marker"></i>New York, Kumbalagodu</li>
-                                <li><i class="fa fa-phone"></i>+1-12344465767</li>
+                            <h3 class="footer-title" style="text-align: center">Contact Us</h3>
+                            <ul class="footer-links text-left">
+                                <li><i class="fa fa-map-marker"></i>Vellore Institute of Technology,Chennai</li>
+                                <li><i class="fa fa-phone"></i>+1-1234446577</li>
                                 <li>
                                     <i class="fa fa-envelope"></i>
-                                    <a href="mailto:puneethreddy951@gmail.com">puneethreddy951@gmail.com</a>
+                                    <a href="mailto:puneethreddy951@gmail.com">xyz951@gmail.com</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
     
-                    <div class="col-md-6 text-center">
+                    <!-- <div class="col-md-6 text-center">
                         
                         <ul class="footer-social-links">
-                            <li><a href="#" target="_blank"><i class="fa fa-twitter" style="font-size: 18px"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter" ></i></a></li>
+                            <li><a href="facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="mailto:puneethreddy951@gmail.com"><i class="fa fa-envelope"></i></a></li>
                         </ul>
-                    </div>
+                    </div> -->
     
-                    <div class="col-md-3">
+                    <div class="col-md-6 d-flex justify-content-end">
                         <div class="footer">
                             <h3 class="footer-title">Copyright</h3>
                             <p>&copy; <script>document.write(new Date().getFullYear());</script> All rights reserved</p>
@@ -103,5 +109,8 @@
     <script src="main.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
