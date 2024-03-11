@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Analysis Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="../css/.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="main.css">
@@ -15,8 +17,8 @@
         <nav id="nav-bar" class="navbar navbar-expand-sm navbar-dark  bg-dark">
             <div class="container">
                 <a href="#" class="navbar-brand">
-                    <img src="../logo/logo.png" alt="#logoImg" height="50" width="50" >
-                    <h3 class="d-inline align-middle"> Scoops</h3>
+                    <img src="../logo/logo.png" alt="#logoImg" height="50" width="80" >
+                    <h3 id="usernamePlaceholder" class="d-inline align-middle"> Scoops</h3>
                 </a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,26 +42,28 @@
     <div class="main-content">
         <div class="upload-section">
             <div class="upload-box">
-                <label for="video-upload" class="upload-label">Upload Video</label>
+                <label for="video-upload" class="upload-label"> <i class="fas fa-download fa-2x"></i></label>
                 <input type="file" id="video-upload" class="video-upload-input">
             </div>
-            <button id="upload-button">Upload</button>
+            <button id="upload-button" class ="btn btn-sm">Upload</button>
         </div>
-        <div class="analysis-options">
-            <div class="option-box" id="detect-helmet">Detect Helmet and Numberplate</div>
-            <div class="option-box" id="detect-speed">Detect Speed</div>
-            <div class="option-box" id="extract-numberplate">Extract Number Plate</div>
-        </div>
-        <div class="output-video">
-            <video id="output-video" controls></video>
-        </div>
-        <div class="download-button">
-            <button id="download-excel">Download Numberplate Excel</button>
+        <div class="buttons-section">
+            <div class="analysis-options">
+                <div class="option-box btn" id="detect-helmet">Detect Helmet and Numberplate</div>
+                <div class="option-box btn" id="detect-speed">Detect Speed</div>
+                <div class="option-box btn" id="extract-numberplate">Extract Number Plate</div>
+            </div>
         </div>
     </div>
-    <footer>
-        <div class="bottom-footer">
-            <div class="container">
+    <div class="output-video-section">
+        <video id="output-video" controls></video>
+        
+    </div>
+    
+    
+    <footer class="bg-dark">
+        <div class="bottom-footer ">
+            <div class="container" >
                 <div class="row">
                     <div class="col-md-3">
                         <div class="footer">
@@ -78,7 +82,7 @@
                     <div class="col-md-6 text-center">
                         
                         <ul class="footer-social-links">
-                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter" style="font-size: 18px"></i></a></li>
                             <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="mailto:puneethreddy951@gmail.com"><i class="fa fa-envelope"></i></a></li>
                         </ul>

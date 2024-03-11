@@ -1,3 +1,8 @@
+var username = "exampleUsername"; 
+document.getElementById('usernamePlaceholder').innerText = username;
+
+
+
 // document.addEventListener("DOMContentLoaded", function() {
 //     const dropdown = document.getElementById('dropdown');
 //     const logoutBtn = document.getElementById('logout');
@@ -7,7 +12,6 @@
 //         this.querySelector('.dropdown-content').classList.toggle('show');
 //     });
 
-//     // Logout functionality
 //     logoutBtn.addEventListener('click', function(event) {
 //         event.preventDefault();
 //         // Perform logout operation here, such as redirecting to a logout endpoint
