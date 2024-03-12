@@ -7,19 +7,29 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; }
+    min-height: 100vh;
+    background-color: rgb(245, 245, 236);
+ }
 
 main {
     flex: 1;
 }
+.navbar-custom {
+    /* background-color: #00203d !important; */
+    background-color: #011e39 !important;
+}
+.navc{
+    color: #929dae !important;
+}
 #usernamePlaceholder {
     align-items: center;
-    font-size: 16px; 
+    font-size: 20px; 
     /* margin-right: 70px; */
     margin: auto;
 }
 .text-center {
     text-align: center;
+    font-size: 15px;
 }
 
 
@@ -73,15 +83,15 @@ main {
     flex:0.3;
 }
 .btn{
-    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+    background-image: linear-gradient(to right,  #4fb3fb 0%, #45dcf7  51%, #69bffc  100%);
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
+    color: #000;            
+    box-shadow: 0 0 5px #eee;
     border-radius: 10px;
     display: block;
   }
